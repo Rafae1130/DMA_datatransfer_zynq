@@ -19,7 +19,7 @@ int16_t data[BUFFER_SIZE];
 void InterruptHandler(){
 
 	xil_printf("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%INTERRUPT CALLED%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% \n\r");
-	u32 temp;
+
 	for(int i=BUFFER_SIZE-10000; i<BUFFER_SIZE-1; i++){
 		//xil_printf("counter value= %d \r\n", data[i]);
 		xil_printf("%d ", data[i]);
